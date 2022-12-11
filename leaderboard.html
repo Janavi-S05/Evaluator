@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  height:100vh;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.myblock{
+  margin:60px auto auto auto;
+  display:block;
+}
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 
+    minmax(100px, 170px)
+    minmax(100px, 300px)
+    minmax(100px, 270px);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th,
+td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #6c7ae0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: white;
+}
+
+th:last-child {
+  border: 0;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #808080;
+}
+
+tr:nth-child(even) td {
+  background: #f8f6ff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  height:70px;
+  background-color: #dddddd;
+}
+
+li {
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+li a {
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: none;
+}
+</style>
+<body>
+  <ul>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+  </ul>
+  <div class="container">
+  <div class="myblock">
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Finish Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lani</td>
+        <td>0:16:23</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Israel</td>
+        <td>0:20:30</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Eveleen</td>
+        <td>0:29:41</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Conn</td>
+        <td>0:30:45</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Cherye</td>
+        <td>0:32:08</td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+    </div>
+      </body>
+</body>
+</html>
