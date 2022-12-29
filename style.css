@@ -147,7 +147,7 @@
         "sidebar content-1 content-1";
     }
   
-  .header {
+  .quest-header {
     grid-area: header;
     justify-content: end;
     align-items: center;
@@ -187,12 +187,12 @@
     display:grid;
     grid-area: content-1;
   }
-  .quest-content{
+  .question-content{
     width:85%;
     height:50vh;
     margin: 50px auto auto 80px;
   }
-  .quest-content h1{
+  .question-content h1{
     margin-left:20px;
   }
   .inner-quest{
@@ -207,13 +207,52 @@
   .sub-quest{
     margin-left:20px;
   }
-  .btn{
-    height:60%;
-    width:10%;
-    margin:15px 80px;
-    font-size: 1.7rem;
+  
+
+
+  /* @media (max-width: 501px) {
+    html {
+      font-size: 15px;
+    }
+  
+    .container .form-1 {
+      width: 300px;
+    }
   }
   
+  @media (min-width: 501px) and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  
+    .container .form-1 {
+      width: 450px;
+    }
+  }
+  
+  @media (min-width: 765px) and (max-width: 1200px) {
+    html {
+      font-size: 18px;
+    }
+  
+    .container .form-1 {
+      width: 540px;
+      height: 550px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .container {
+      height: 100vmax;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  } */
+
   /* Result page */
   .container-block {
     padding: 10px;
@@ -234,6 +273,7 @@
       minmax(100px, 170px)
       minmax(100px, 300px)
       minmax(100px, 270px);
+      /* transform: translate(-50%, -55%); */
     background: rgba(244, 244, 244, 0.1);
     box-shadow: 0 19px 38px rgba(178, 33, 33, 0.3);
     border-radius:20px;
@@ -277,3 +317,136 @@
     background: #f8f6ff;
   }
   
+/* compiler */
+.column {
+  margin: 20px;
+ }
+ .row{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-right:0px;
+ }
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+     #editor {
+       min-height: 500px;
+     }
+     #button{
+       display: flex;
+       float: right;
+     }
+     .btn{
+       margin-right:20px;
+     }
+ 
+ .column.quest1{
+   display: grid;
+   grid-template-rows: 150px 150px 150px 150px;
+   margin-left:30px;
+ }
+ .quest{
+   margin-left:20px;
+ }
+ .quest-content{
+   background-color: rgba(0,0,0,0.1);
+   padding-left:20px;
+ }
+  .wrapper .sidebar{
+    background: rgb(204, 59, 88);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid rgb(243, 66, 101);;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: rgb(243, 66, 101);;
+
+    background:white;
+    border-right: 2px solid rgb(243, 66, 101);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: rgb(243, 66, 101);;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: rgb(243, 66, 101);;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
