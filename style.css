@@ -152,10 +152,9 @@
     justify-content: end;
     align-items: center;
     background-color: crimson;
-  }
-  .quest-header{
+    cursor:pointer;
     margin-right:80px;
-  }
+    }
   .item {
     display: flex;
   }
@@ -207,51 +206,6 @@
   .sub-quest{
     margin-left:20px;
   }
-  
-
-
-  /* @media (max-width: 501px) {
-    html {
-      font-size: 15px;
-    }
-  
-    .container .form-1 {
-      width: 300px;
-    }
-  }
-  
-  @media (min-width: 501px) and (max-width: 768px) {
-    html {
-      font-size: 14px;
-    }
-  
-    .container .form-1 {
-      width: 450px;
-    }
-  }
-  
-  @media (min-width: 765px) and (max-width: 1200px) {
-    html {
-      font-size: 18px;
-    }
-  
-    .container .form-1 {
-      width: 540px;
-      height: 550px;
-    }
-  }
-  
-  @media (orientation: landscape) and (max-height: 500px) {
-    .container {
-      height: 100vmax;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  } */
 
   /* Result page */
   .container-block {
