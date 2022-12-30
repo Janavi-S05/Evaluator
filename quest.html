@@ -7,22 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style-quest.css">
     <title>Quests</title>
-    <style>
-        body {
-    padding:0px;
-    margin:0px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    }
-    </style>
 </head>
 <body>
     <div class="quest-container">
-        <div class="item header">
+        <div class="item quest-header">
             <h3 class="quest-header">Solved: 0/3</h3>
             <h3 class="quest-header" onclick="location.href = '/leaderboard.html';">Leaderboard</h3>
             <h3 class="quest-header">Profile</h3>
@@ -35,11 +25,11 @@
             <div id="hover"><a href="/"><p class="num">3</p></a></div>
         </div>
         <div class="item content-1">
-            <div class="quest-content">
+            <div class="question-content">
                 <h1>Questions</h1>
                 <div class="inner-quest">
                     <h3 class="sub-quest">1. Count Array Pairs Divisible by K</h3>
-                    <button type="button" class="btn btn-danger" onclick="location.href='/compiler.html';">Solve</button>
+                    <button type="button" class="btn btn-danger" onclick="location.href = '/compiler.html';">Solve</button>
                 </div>
                 <div class="inner-quest">
                     <h3 class="sub-quest">2. Four Substrings equal</h3>
